@@ -1,0 +1,333 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #17B978;
+  --primary-dark: #129E66;
+  --bg-light: #F8F9FA;
+  --text-dark: #333;
+  --white: #ffffff;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Navbar */
+/* Navbar Look Update */
+.navbar {
+  background-color: #f8f9fa !important;  /* clean light background */
+  border-bottom: 1px solid #e0e0e0;      /* subtle bottom border */
+  box-shadow: none !important;          /* remove shadows */
+}
+
+.navbar .navbar-brand {
+  color: #555 !important;               /* gray logo text */
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-brand img {
+  margin-right: 8px;
+}
+
+.navbar a {
+  color: #666 !important;              /* right-side links gray */
+  font-weight: 600;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #17B978 !important;           /* on hover highlight */
+}
+
+/* Remove Bootstrap btn look */
+.navbar .btn,
+.navbar .btn-outline-primary,
+.navbar .btn-light {
+  background: none !important;
+  border: none !important;
+  color: #666 !important;
+  font-weight: 600;
+  padding: 0;
+}
+
+.navbar .btn:hover {
+  color: #17B978 !important;
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* Search Form */
+/* Search Section */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #17B978;
+  box-shadow: 0 0 0 3px rgba(23, 185, 120, 0.2);
+  outline: none;
+}
+
+.btn-search {
+  padding: 12px 24px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: #17B978;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-search:hover {
+  background-color: #129E66;
+}
+
+
+.btn-success {
+  background-color: var(--primary);
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Cards */
+
+
+/* Package Image Placeholder Styling */
+.card .card-img-top {
+  height: 250px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  /* object-fit: cover; */
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+/* Make Text Consistent */
+.card h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Button Colors */
+.card .btn-success {
+  background-color: #17B978;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card .btn-success:hover {
+  background-color: #129E66;
+  transform: scale(1.02);
+}
+.card .btn-primary {
+  background-color: #00435a;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.card-body p {
+  margin: 0.10rem 0;
+}
+.card-text {
+  margin: 0.25rem 0 !important;
+}
+
+.card .btn-primary:hover {
+  background-color: #11617c;
+  transform: scale(1.02);
+}
+/* Inactive Card Overlay */
+.blurred {
+  filter: blur(1px);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.inactive-badge {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.review-card h6 {
+    margin: 0;
+    font-weight: 700;
+    color: #333;
+}
+
+.review-card .package-name {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.review-card .stars {
+    color: #f7c100;
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.review-card p.comment {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.review-card .date {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 8px;
+}
+.review-card {
+    background-color: #f8f9fa;
+    border-left: 5px solid #17B978;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+.package-name {
+    font-weight: bold;
+    color: #00695c;
+}
+.comment {
+    margin: 10px 0;
+}
+.date {
+    font-size: 0.8rem;
+    color: #555;
+}
+.feedback-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+
+
+@keyframes slideTrain {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+
+/* Alerts */
+.alert {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Responsive Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.col-md-4 {
+  flex: 0 0 30%;
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navbar .ms-auto {
+    margin-top: 10px;
+  }
+}
+.comment-cell {
+    max-width: 300px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.toggle-comment {
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 5px;
+}

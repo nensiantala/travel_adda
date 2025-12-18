@@ -1,0 +1,116 @@
+/* Use modern sans-serif font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  background: linear-gradient(to bottom, #e8f0ff, #d0e1f9); /* subtle blue gradient */
+}
+
+/* Navbar styling */
+.navbar {
+  background: transparent;
+  padding: 1.5rem 3rem;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #6b6b6b !important;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #7a7a7a !important;
+  margin-left: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4c4c4c !important;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 0.3rem 0.7rem;
+}
+.review-card {
+            background-color: #f8f9fa;
+            border-left: 5px solid #17B978;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+        .stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+        .package-name {
+            font-weight: bold;
+            color: #00695c;
+        }
+       .comment {
+    margin: 10px 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+.toggle-comment {
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+        .date {
+            font-size: 0.8rem;
+            color: #555;
+        }
+/* Mobile responsive tweak */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+.carousel-img {
+  height: 200px;
+  object-fit: cover; /* Crops image nicely without stretching */
+  border-radius: 15px; /* Smooth corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: transform 0.5s ease;
+}
+
+.carousel-img:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+.carousel-caption h2, .carousel-caption p {
+  color: #000000;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 300px;
+  }
+}
